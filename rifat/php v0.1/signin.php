@@ -36,7 +36,6 @@ $run=mysqli_query($con,$sql);
 <head>
 	<title>Database Connection</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="index.js"></script>
 </head>
 <body>
     <h1>DATA 365</h1>
