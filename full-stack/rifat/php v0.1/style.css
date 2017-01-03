@@ -22,10 +22,14 @@ h3{
   float: left;
   border: 2px solid #232D42;
   border-radius: 10px;
-  margin:80px;
-  padding: 60px;
-  width:300px;
-  height:200px;
+  margin-left:100px;
+  margin-right: 30px;
+  margin-top: 50px;
+  margin-bottom: auto;
+  padding-left: 30px;
+  padding-right: 35px;
+  padding-top: 35px;
+  padding-bottom: 30px;
 }
 .right-side{
   float: right;
