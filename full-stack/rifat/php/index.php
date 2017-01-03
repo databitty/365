@@ -42,7 +42,7 @@
 			<td><input type="password" name="pass" placeholder="Your Password" required /></td>
 		</tr>
 		<tr>
-			<td><button type="submit" name="signup">Sign Up</button></td>
+			<td><button type="submit" name="signup">SIGN UP</button></td>
 		</tr>
 	</table>
 </form>
