@@ -17,15 +17,16 @@ if(isset($_POST['submit']))
 $run=mysqli_query($con,$sql);
 
 	if(mysqli_num_rows($run))
-	{
-//here session is used and value of  " $e " store in $_SESSION
-	$_SESSION['email']=$e;
-	echo "<script>alert('successfully Login ');</script>";
+	{?>
+
+		<?php
+	<script>alert('successfully Login ');</script>
 	header("Location: home.php");
 	}
 	else
-	{
-		echo "<script>alert('Email or password is incorrect!')</script>";
+	{?>
+		<script>alert('Email or password is incorrect!')</script>
+		<?php
 	}
 
 }
