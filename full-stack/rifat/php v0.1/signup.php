@@ -5,21 +5,26 @@
  if($con === false){
  	die("ERROR: Could not connect. " . mysqli_connect_error());
  }
+
 if(isset($_POST['submit'])){
  $n = $_POST['name'];
  $e = $_POST['email'];
  $p = md5($_POST['pass']);
  $sql = "INSERT INTO user (username,email,password) VALUES ('$n','$e','$p')";
 
- if(mysqli_query($con, $sql)){
- 	echo "<script>alert('successfully registered ');</script>";
- }
- else{
-
-	echo "ERROR: Could not able to execute $sql. " .mysqli_error($con);
- }
+if(mysqli_query($con, $sql)){
+		?>
+		<script>alert('successfully Login ');</script>
+		<?php
+	}
+else
+	{
+		?>
+		<script>alert('ERROR: Could not able to execute...');</script>
+		<?php
+	}
 }
-mysqli_close($con);
+	mysqli_close($con);
 ?>
 <!DOCTYPE
 <html>
