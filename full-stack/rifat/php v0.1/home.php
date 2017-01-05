@@ -1,3 +1,11 @@
+ <?php 
+ session_start();
+ if (!isset($_SESSION['email'])) {
+ 		header("Location: signin.php");
+ }
+ session_destroy();
+?>
+ 
  <!DOCTYPE
  <html>
  <head>
@@ -5,7 +13,7 @@
  	<link rel="stylesheet" type="text/css" href="style.css">
  </head>
  <body>
-<script>alert('successfully Login ');</script>;
+ <script>alert('successfully Login ');</script>;
      <h1>DATA 365</h1>
      <h3>Make the better app</h3>
 		 <br>
