@@ -21,7 +21,7 @@ $time = mysql_real_escape_string($_POST['stime']);
 
 $result = mysql_query("SELECT * FROM appt");
 
-echo " cfg $count";
+
     $j=0;$k=0;
 
 
@@ -110,6 +110,7 @@ echo " cfg $count";
           <td>Doctor Name
             <select name="dname" required="">
               <option></option>
+             <!--This code for Search each data-->
               <?php
                 $query=mysql_query("select * from doct")or die(mysql_error());
                 while($row=mysql_fetch_array($query))
@@ -125,69 +126,6 @@ echo " cfg $count";
           </td>
         </td>
 
-<!-- Patient Info-->
-
-        <td>
-          <td>Patient Name
-            <select name="pname" required="">
-              <option></option>
-                <?php
-                  $query=mysql_query("select * from patient")or die(mysql_error());
-                    while($row=mysql_fetch_array($query))
-                    {
-                      ?>
-                      <option value="<?php echo $row['pname']?>">
-                        <?php
-                        echo $row['pname']?>
-                      </option>
-                      <?php
-                    }
-                ?>
-            </select>
-          </td>
-        </td>
-
-<!-- Doctor Name Info-->
-
-        <td>
-          <td>Day
-            <select name="sday" required="">
-              <option></option>
-                <?php
-                  $query=mysql_query("select * from slot")or die(mysql_error());
-                  while($row=mysql_fetch_array($query))
-                    {
-                      ?>
-                      <option value="<?php echo $row['sday']?>">
-                        <?php echo $row['sday']?>
-                      </option>
-                      <?php
-                    }
-                ?>
-            </select>
-          </td>
-        </td>
-
-<!-- Time Info-->
-
-        <td>
-          <td>Time
-            <select name="stime" required="">
-              <option></option>
-              <?php
-              $query=mysql_query("select * from slot")or die(mysql_error());
-              while($row=mysql_fetch_array($query))
-              {
-                ?>
-                <option value="<?php echo $row['stime']?>">
-                  <?php echo $row['stime']?>
-                </option>
-                <?php
-              }
-              ?>
-            </select>
-          </td>
-        </td>
 <!-- **********************************-->
       </table>
     </td>
