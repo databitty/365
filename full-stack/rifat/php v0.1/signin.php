@@ -19,7 +19,7 @@ $run=mysqli_query($con,$sql);
 	if(mysqli_num_rows($run))
 	{?>
 
-		<?php
+	<?php
 	<script>alert('successfully Login ');</script>
 	header("Location: home.php");
 	}
