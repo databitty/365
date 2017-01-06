@@ -20,7 +20,7 @@
 		 <h1>Successfully Login</h1>
      <br>
      <br>
-     <a href="signup.php" style="text-decoration: none;"><button class="btn btn-primary btn-block btn-large" style="width: 10%; display:block; margin-left: 45%; text-decoration: none;">EXIT !</button></a>
+     <a href="signup.php" style="text-decoration: none;"><button class="btn btn-primary btn-block btn-large" style="width: 10%; display:block; margin-left: 45%; text-decoration: none;">Logout</button></a>
 
  </form>
  </body>
