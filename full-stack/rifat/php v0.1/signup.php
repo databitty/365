@@ -14,7 +14,7 @@ if(isset($_POST['submit'])){
 
 if(mysqli_query($con, $sql)){
 		?>
-		<script>alert('successfully Login ');</script>
+		<script>alert('successfully Sign Up');</script>
 		<?php
 	}
 else
