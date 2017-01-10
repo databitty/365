@@ -1,27 +1,38 @@
- <?php 
- session_start();
- if (!isset($_SESSION['email'])) {
- 		header("Location: signin.php");
- }
- session_destroy();
+<?php
+session_start();
+if(!isset($_SESSION['email']))
+{
+  header ("Location: home.php");
+}
+session_destroy();
 ?>
- 
  <!DOCTYPE
  <html>
- <head>
- 	<title>Database Connection</title>
- 	<link rel="stylesheet" type="text/css" href="style.css">
- </head>
- <body>
- <script>alert('successfully Login ');</script>;
-     <h1>DATA 365</h1>
-     <h3>Make the better app</h3>
-		 <br>
-		 <h1>Successfully Login</h1>
-     <br>
-     <br>
-     <a href="signup.php" style="text-decoration: none;"><button class="btn btn-primary btn-block btn-large" style="width: 10%; display:block; margin-left: 45%; text-decoration: none;">Logout</button></a>
+	 <head>
+	 	<title>ADMIN HOME</title>
+	 	<link rel="stylesheet" type="text/css" href="style1.css">
+	 </head>
+	 <body>
+	 		<div class="header">
+				 <a href="" class="l"><span>Welcom to Admin_Page</span></a>
+				 <a href="admin.php" class="r"><span>Logout</span></a>
+         <div id="r">
+       Hi <?php echo $un; ?><a href="admin.php">LogOut</a>
+   </div>
+			</div>
 
- </form>
- </body>
+
+				<div class="hm">
+				     <a href="">Home</a>
+				</div>
+				<div class="btn">
+				<h1>Member</h1>
+				<a href="insert.php" class="button1">Insert</a>
+				<a href="#" class="button2">Update</a>
+				<a href="delete.php" class="button3">Delete</a>
+				<a href="#" class="button4">Search</a>
+				</div>
+
+
+	 </body>
  </html>
