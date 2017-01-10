@@ -16,7 +16,8 @@ body {
   width: 950px;
 }
 .header a{
-  margin-top: 36px;
+  color: #6F9FD6;
+  text-decoration: none;
 }
 .footer{
   margin-top: 26%;
