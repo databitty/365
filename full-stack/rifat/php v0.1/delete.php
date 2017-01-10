@@ -1,5 +1,12 @@
 <?php
 session_start();
+if(!isset($_SESSION['email']))
+{
+  header ("Location: admin.php");
+}
+?>
+
+<?php
 $con = mysqli_connect("localhost", "root", "", "data");
 
 if($con === false){
@@ -16,7 +23,20 @@ die("ERROR: Could not connect. " . mysqli_connect_error());
 	<link rel="stylesheet" type="text/css" href="style3.css">
 </head>
 <body>
-    <div align="center" style="margin-top:60px;margin-bottom:60px">
+<div class="header">
+  <a href="admin.php"> LogOut</a>
+</div>
+
+<div class="center">
+  <ul class="menu">
+    <li><a style="margin-left:270px" href="home.php">Home</a></li>
+    <li><a href="insert.php">Insert</a></li>
+    <li><a href="update.php">Updat</a></li>
+    <li><a href="delete.php">Delete</a></li>
+    <li><a href="search.php">Search</a></li>
+  </ul>
+</div>
+  <div align="center" style="margin-top:60px;margin-bottom:60px">
     <form action="delete.php" method="POST" >
   		<table>
   			<tr>
@@ -38,12 +58,12 @@ die("ERROR: Could not connect. " . mysqli_connect_error());
 
     $sql = "DELETE FROM members WHERE username='$name'";
     $record=mysqli_query($con,$sql);
-    echo "<script>alert('successfully Deleted');</script>";
-      header("Location: delete.php");
+    echo "<script>alert('Successfully Deleted!');</script>";
     }
 
 
     ?>
+
 <div class="contant">
   <div>
   		<table id="table" align="center" border="1" width="850px">
