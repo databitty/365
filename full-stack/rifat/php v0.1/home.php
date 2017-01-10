@@ -2,10 +2,16 @@
 session_start();
 if(!isset($_SESSION['email']))
 {
-  header ("Location: home.php");
+  header ("Location: admin.php");
 }
-session_destroy();
+
+ $con = mysqli_connect("localhost", "root", "", "data");
+
+ if($con === false){
+ 	die("ERROR: Could not connect. " . mysqli_connect_error());
+ }
 ?>
+
  <!DOCTYPE
  <html>
 	 <head>
@@ -14,12 +20,12 @@ session_destroy();
 	 </head>
 	 <body>
 	 		<div class="header">
-				 <a href="" class="l"><span>Welcom to Admin_Page</span></a>
-				 <a href="admin.php" class="r"><span>Logout</span></a>
-         <div id="r">
-       Hi <?php echo $un; ?><a href="admin.php">LogOut</a>
-   </div>
+        <a href=""><span>Welcom to Admin_Page</span></a>
 			</div>
+      <div id="r">
+        <a href="admin.php">Logout</a>
+      </div>
+
 
 
 				<div class="hm">
@@ -28,9 +34,9 @@ session_destroy();
 				<div class="btn">
 				<h1>Member</h1>
 				<a href="insert.php" class="button1">Insert</a>
-				<a href="#" class="button2">Update</a>
+				<a href="update.php" class="button2">Update</a>
 				<a href="delete.php" class="button3">Delete</a>
-				<a href="#" class="button4">Search</a>
+				<a href="search.php" class="button4">Search</a>
 				</div>
 
 
