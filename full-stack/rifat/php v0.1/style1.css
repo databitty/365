@@ -6,14 +6,26 @@ body {
   font-family: 'Open Sans', sans-serif;
   background: #092756;
 }
-.header a{
-  margin-top: 20px;
+.header a {
+	margin-top: -65px;
+	float: left;
+	color: white;
+	text-decoration: none;
+	font-size: 30px;
 }
-a.hm {
-  font-size: 22px;
-  color: #fed189;
-  text-decoration: none;
-  }
+#r a {
+	float: right;
+	color: white;
+	font-size: 30px;
+	margin-top: -65px;
+	margin-right: 57px;
+	text-decoration: none;
+}
+.hm a {
+	font-size: 38px;
+	color: #fff;
+	text-decoration: none;
+}
 .hm {
   padding: 20px;
   margin-top: 100px;
@@ -23,32 +35,8 @@ a.hm {
   border-bottom: 4px solid white;
   border-top: 4px solid white;
 }
-a{
-  font-size: 41px;
-  color: white;
-  text-decoration: none;
-}
 
-a.r{
-    font-size: 22px;
-    font-weight: 300;
-    color: #fed189;
-    float: right;
-    text-decoration: none;
-    margin-right: 40px;
-    margin-top: -70px;
-    margin-bottom: 20px;
-    padding: 23px;
-}
-a.l{
-    font-size: 22px;
-    font-weight: 300;
-    color: #fed189;
-    float: left;
-    margin-top: -47px;
-    text-transform: uppercase;
-    text-decoration: none;
-}
+
 .button1,.button2,.button3,.button4 {
     background-color: #2E343E;
     border: none;
