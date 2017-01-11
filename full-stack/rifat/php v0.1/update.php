@@ -31,7 +31,7 @@ die("ERROR: Could not connect. " . mysqli_connect_error());
      $p = md5($_POST['pass']);
 
       $sql="UPDATE members SET first_name='$fn',last_name='$ln',username='$un',email='$e',password='$p' WHERE `username`=$un";
-     if (mysql_query($con,$sql)) {
+     if (mysqli_query($con,$sql)) {
          ?>
 
          <script>alert('Successfully Updated ');</script>
@@ -87,14 +87,14 @@ die("ERROR: Could not connect. " . mysqli_connect_error());
                $record=mysqli_query($con,$sql);
                $member=mysqli_fetch_array($record);}?>
 <div class="contant">
-  <form id="table" action="insert.php" method="POST">
+  <form id="table" action="update.php" method="POST">
       <table align="center" id="tb">
 
             <tr><td>Fast Name:<input type='text' name='fname' value='<?php echo $member['first_name'] ?>'/></td></tr>
             <tr><td>Last Name:<input type='text' name='lname' value='<?php echo $member['last_name'] ?>'/></td></tr>
-            <tr><td>User Name:<input type=text name=name value='<?php echo $member['username'] ?>'/></td></tr>
-            <tr><td>Email :<input type=text name=email style=margin-left:62px; value='<?php echo $member['email'] ?>'/></td></tr>
-            <tr><td>Password:<input type=text name=pass value='<?php echo $member['password'] ?>'/></td></tr>
+            <tr><td>User Name:<input type='text' name='name' value='<?php echo $member['username'] ?>'/></td></tr>
+            <tr><td>Email :<input type='text' name='email' style='margin-left:62px;' value='<?php echo $member['email'] ?>'/></td></tr>
+            <tr><td>Password:<input type='text' name='pass' value='<?php echo $member['password'] ?>'/></td></tr>
             <tr><td><input type='submit' name='update' style="margin-left:62px;" value='update'/></td></tr>
 
       </table>
