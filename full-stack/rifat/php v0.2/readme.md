@@ -1,6 +1,6 @@
-#PHP Version Tutorial 0.1
+#PHP Version Tutorial 0.2
 
 #Wareframe
 <h3 align="center"> 
-  <img src="/full-stack/rifat/php/Web Mock f.png" />
+  <img src="/full-stack/rifat/php v0.2/signup_mock.PNG"/>
 </h3>
