@@ -1,0 +1,103 @@
+html {overflow:hidden; }
+body {
+	background: #fff;
+	width: 100%;
+	margin-left: 0;
+}
+.b1 {
+	border-bottom: 3px solid #8CC25E;
+	margin-top: 60px;
+}
+.b2 {
+	border-bottom: 3px solid #8CC25E;
+	width: 71%;
+	margin-left: 198px;
+	margin-top: 77px;
+}
+.menu {
+	/* padding: 0px; */
+	margin-top: 16px;
+}
+.menu li {
+	float: left;
+	border: 1px solid #8CC25E;
+	padding: 11px 54px;
+	display: block;
+	margin-left: 24px;
+}
+.menu li a {
+	text-decoration: none;
+	font-size: 20px;
+	color: black;
+}
+.box {
+	padding: 6% 35%;
+}
+.footer{
+	border-bottom:3px solid #8CC25E;
+}
+input{
+	border: 1px solid green;
+}
+#form {
+	border: 1px solid #8CC25E;
+	padding: 18px;
+}
+td {
+	padding: 10px;
+}
+.btn {
+	padding: 9px 36px;
+	background-color: #1FD91A;
+	margin-bottom: 18%;
+	font-size: 16px;
+	border-radius: 22px;
+	border: 2px solid chartreuse;
+}
+.btn:hover{
+	color: #fff;
+}
+#li{
+	margin-left: 160px;
+}
+@media screen and (max-width:320px){
+	.menu{margin-left: -95px;}
+	#li{margin-left: 62px;}
+	.menu li {padding: 4px 6px;margin-left: 9px;}
+	.menu li a {font-size: 15px;}
+	.b2 {width: 94%;margin-left: 7px;margin-top: 60px;}
+	.box {padding: 6% 7%;}
+	#form {padding: 0px;}
+	.btn{padding: 4px 24px;margin-bottom: 8%;font-size: 14px;}
+}
+@media screen and (max-width:360px){
+	.menu{margin-left: -77px;}
+	#li{margin-left: 62px;}
+	.menu li {padding: 4px 6px;margin-left: 9px;}
+	.menu li a {font-size: 15px;}
+	.b2 {width: 94%;margin-left: 7px;margin-top: 60px;}
+	.box {padding: 6% 7%;}
+	#form {padding: 0px;}
+	.btn{padding: 4px 24px;margin-bottom: 8%;font-size: 14px;}
+}
+@media screen and (max-width: 768px){
+	#li {margin-left: 0px;}
+	.menu li {padding: 11px 32px;}
+	.b2 {width: 89%;margin-left: 40px;}
+	.box {padding: 11% 22%;}
+}
+@media screen and (max-width: 800px){
+	#li {margin-left: 0px;}
+	.menu li {padding: 11px 32px;}
+	.b2 {width: 86%;margin-left: 40px;}
+	.box {padding: 11% 22%;}
+}
+@media screen and (max-width: 980px){
+	#li{margin-left: -6px;}
+	.b2 {width: 93%;margin-left: 31px;}
+	.box {padding: 6% 34%;}
+}
+@media screen and (max-width: 1280px){
+	.box {padding: 2% 34%;}
+	.btn{margin-bottom: 4%}
+}
