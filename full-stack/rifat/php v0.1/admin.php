@@ -1,4 +1,21 @@
 <?php
+// installs global error and exception handlers
+Rollbar::init(array('access_token' => '1c5ed246071d4e179e185070cfce40d0'));
+
+// Message at level 'info'
+Rollbar::report_message('testing 123', 'info');
+
+// Catch an exception and send it to Rollbar
+try {
+    throw new Exception('test exception');
+} catch (Exception $e) {
+    Rollbar::report_exception($e);
+}
+
+// Will also be reported by the exception handler
+throw new Exception('test 2');
+?>
+<?php
 session_start();
 $con = mysqli_connect("localhost", "root", "", "data");
 if($con === false){
