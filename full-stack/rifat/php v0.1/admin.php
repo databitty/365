@@ -1,4 +1,17 @@
 <?php
+require_once 'rollbar.php';
+
+$config = array(
+    // required
+    'access_token' => '1c5ed246071d4e179e185070cfce40d0',
+    // optional - environment name. any string will do.
+    'environment' => 'production',
+    // optional - path to directory your code is in. used for linking stack traces.
+    'root' => '/365/'
+);
+Rollbar::init($config);
+?>
+<?php
 // installs global error and exception handlers
 Rollbar::init(array('access_token' => '1c5ed246071d4e179e185070cfce40d0'));
 
