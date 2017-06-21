@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<phpunit bootstrap="bootstrap.php" colors="true">
+<phpunit bootstrap="./full-stack" colors="true">
     <php>
         <var name="db_dsn" value="pgsql:dbname=hello_world_test;host=localhost"/>
         <var name="db_username" value="postgres"/>
@@ -9,7 +9,7 @@
 
     <testsuites>
         <testsuite name="Hello World Test Suite">
-            <directory>./Tests/</directory>
+            <directory>./full-stack</directory>
         </testsuite>
     </testsuites>
 
@@ -17,7 +17,7 @@
         <whitelist>
             <directory>./</directory>
             <exclude>
-                <directory>./Tests</directory>
+                <directory>./full-stack</directory>
             </exclude>
         </whitelist>
     </filter>
