@@ -40,10 +40,10 @@ matrix:
   - if [[ "$DB" == "pgsql" ]]; then psql -c "DROP DATABASE IF EXISTS hello_world_test;" -U postgres; fi
   - if [[ "$DB" == "pgsql" ]]; then psql -c "create database hello_world_test;" -U postgres; fi
   - if [[ "$DB" == "mysql" ]]; then mysql -e "create database IF NOT EXISTS hello_world_test;" -uroot; fi
-  "script": "phpunit --configuration phpunit_$DB.xml --coverage-text",
-  "group": "stable",
-  "dist": "precise",
-  "os": "linux"
+  
+  group: stable
+  dist: precise
+  os: linux
 
 
 # omitting "script:" will default to phpunit
